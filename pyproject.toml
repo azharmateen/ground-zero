@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ground-zero"
+version = "1.0.0"
+description = "The ultimate project cache and artifact cleaner. Detect and nuke node_modules, __pycache__, .next, build, and more."
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.9"
+authors = [{name = "ground-zero contributors"}]
+keywords = ["cleanup", "cache", "node_modules", "pycache", "disk-space"]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Topic :: Utilities",
+]
+dependencies = [
+    "click>=8.0",
+]
+
+[project.scripts]
+ground-zero = "ground_zero.cli:cli"
+
+[tool.setuptools.packages.find]
+include = ["ground_zero*"]
