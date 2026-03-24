@@ -1,5 +1,8 @@
 # ground-zero
 
+[![Built with Claude Code](https://img.shields.io/badge/Built%20with-Claude%20Code-blue?logo=anthropic&logoColor=white)](https://claude.ai/code)
+
+
 The ultimate project cache and artifact cleaner. Detect and nuke `node_modules`, `__pycache__`, `.next`, `build`, and dozens more across all your projects.
 
 ## Installation
